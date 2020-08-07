@@ -235,6 +235,7 @@ def ChangeToOtherMachine(filelist, repo="TrainYourOwnYOLO", remote_machine=""):
     new_list = []
 
     for file in filelist:
+        import pdb; pdb.set_trace()
         suffix = (file.split(repo))[1]
         if suffix[0] == "/":
             suffix = suffix[1:]
